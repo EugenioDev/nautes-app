@@ -18,7 +18,6 @@ const TodoForm = () => {
   }
 
 const addNewTodo = todo => {
-    console.log(todo)
       if(!todo || /^\s*$/.test(todo.value)){
       return;
       }
