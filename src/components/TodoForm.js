@@ -18,10 +18,14 @@ const TodoForm = () => {
   }
 
 const addNewTodo = todo => {
+    console.log(todo)
+      if(!todo || /^\s*$/.test(todo.value)){
+      return;
+      }
 
-      setTodos((prevTodo) => {
-        return [...prevTodo, todo]
-      })
+    setTodos((prevTodo) => {
+      return [...prevTodo, todo]
+    })
 
 }
 
